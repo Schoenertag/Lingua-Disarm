@@ -58,12 +58,14 @@ public class movementToPoint : MonoBehaviour
     void Update()
     {
         // Here we track the status of the animation
+        
         if (movementPoint.transform.GetComponent<Slider>().value == 8)
         {
             movementPos = movementPoint.transform.position;
             movementPoint.SetActive(false);
             setNew = true;
         }
+        
 
         // Move towards the position of the movementPoint target.
         if (playerObj.transform.position != movementPos)

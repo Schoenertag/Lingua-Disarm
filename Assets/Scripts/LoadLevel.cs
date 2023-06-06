@@ -9,7 +9,7 @@ public class LoadLevel : MonoBehaviour
     public void LoadScene() {
 
         Debug.Log("Level has started loading");
-        SceneManager.LoadScene("BombLevel");
+        SceneManager.LoadScene("BombLevel"); //load bomb level
 
     }
 }
